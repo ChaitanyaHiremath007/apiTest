@@ -9,7 +9,7 @@ app.use(express.json())
 app.post("/emps", async(req,res)=>{
     try{
         const data = new EmpData(req.body)
-        console.log(req.body)
+        // console.log(req.body)
         const EmployeeData = await data.save()
         res.send(EmployeeData);
         
@@ -22,6 +22,7 @@ app.get("/emps", async(req,res)=>{
         const getEmp = await EmpData.find({})
         
         res.status(201).send(getEmp);
+        console.log(getEmp)
         
     }catch(e){
         res.status(400).send(e)
