@@ -31,7 +31,7 @@ app.get("/emps", async(req,res)=>{
 
 
 app.get("/",(req,res)=>{
-    res.send("hello from chaitanya")
+    res.send("hello from chaitanya welcome to my website .")
 })
 
 
