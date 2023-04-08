@@ -35,6 +35,4 @@ app.get("/",(req,res)=>{
 })
 
 
-app.listen(port,()=>{
-    console.log(`connection successfull on port ${port}`)
-})
+app.listen();
