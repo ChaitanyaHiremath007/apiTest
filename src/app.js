@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 require("../src/db/conn")
 const EmpData = require("../src/models/emp")
-const port = process.env.PORT || 3000;
+
 
 app.use(express.json())
 
